@@ -455,17 +455,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add me to your Chat ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('🔗 Movie Time', url=f'https://t.me/+4kz4z9zCyLdjZjI1')
             ],[
-            InlineKeyboardButton('⭕️ Help', callback_data='help'),
-            InlineKeyboardButton('About ⭕️', callback_data='about')
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('About 😎', callback_data='about')
             ],[
-            InlineKeyboardButton('🕵️ Search here Movie 🕵️', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('⭕️ Updates', url='https://t.me/josprojects'),
-            InlineKeyboardButton('Movie Club ⭕️', url='https://t.me/+y53tWFUw6Q43NzE9')
-            ],[
-            InlineKeyboardButton('❌ Close the Menu ❌', callback_data='close_data')
+            InlineKeyboardButton('❎ Close ❎', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -503,7 +498,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('Zombies', callback_data='zombies'),
             InlineKeyboardButton('« Back', callback_data='start'),
-            InlineKeyboardButton('Adult Bot 🔞', url='https://t.me/AdultSearchXBot')
+            InlineKeyboardButton('Help', url='https://t.me/hellodarklord')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
