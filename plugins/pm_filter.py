@@ -116,7 +116,7 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton(" ", url="https://t.me/+26XbUS8O3cM1MDU1"),
+                InlineKeyboardButton("彡 ★ MOVIE TIME ★ 彡", url="https://t.me/+4kz4z9zCyLdjZjI1"),
                 
             ])
 
@@ -401,7 +401,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(buttons),
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm 📩', show_alert=False)
+                await query.answer('Check PM, I have sent files in pm 📩', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -501,7 +501,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🛡️ Status', url=' '),
+            InlineKeyboardButton('🛡️ Status', url='https://t.me/+KUl3bT3sybY0MTll'),
             InlineKeyboardButton('Source 🤐', callback_data='source')
             ],[
             InlineKeyboardButton('« Back', callback_data='start'),
@@ -924,7 +924,7 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton(" ", url="https://t.me/+26XbUS8O3cM1MDU1"),
+        InlineKeyboardButton("彡 ★ MOVIE TIME ★ 彡", url="https://t.me/+4kz4z9zCyLdjZjI1"),
         ])
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
