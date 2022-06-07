@@ -46,11 +46,11 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<code>{file_name}</cod
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "↪️ Requested: <a href={url}>{title}</a>\n👤 Requested By: {message.from_user.mention}\n📑 Total Page: <a href={url}>{page}</a>\n📁 Total Files: <a href={url}>{file}</a>\n📤 Uploaded To: Movie Time Server\n🧑‍🔧 Get Support ✔️ <a href="https://t.me/hellodarklord">DarkLord</a>\n\n📌 Press The Down Buttons To Access The File\n📌 This Post Will Be Deleted After 10 Minutes")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), True)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
-MAX_LIST_ELM = environ.get("MAX_LIST_ELM", ↪️ Requested: <a href={url}>{title}</a>👤 Requested By: {message.from_user.mention}📑 Total Page: <a href={url}>{page}</a>📁 Total Files: <a href={url}>{file}</a>📤 Uploaded To: Movie Time Server🧑‍🔧 Get Support ✔️ <a href="https://t.me/hellodarklord">DarkLord</a>\n\n📌 Press The Down Buttons To Access The File\n📌 This Post Will Be Deleted After 10 Minutes)
+MAX_LIST_ELM = environ.get("MAX_LIST_ELM", ↪️ Requested: <a href={url}>{title}</a>\n👤 Requested By: {message.from_user.mention}\n📑 Total Page: <a href={url}>{page}</a>\n📁 Total Files: <a href={url}>{file}</a>\n📤 Uploaded To: Movie Time Server\n🧑‍🔧 Get Support ✔️ <a href="https://t.me/hellodarklord">DarkLord</a>\n\n📌 Press The Down Buttons To Access The File\n📌 This Post Will Be Deleted After 10 Minutes)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
-LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
+LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are enabled.\n")
 LOG_STR += ("P_TTI_SHOW_OFF found , Users will be redirected to send /start to Bot PM instead of sending file file directly\n" if P_TTI_SHOW_OFF else "P_TTI_SHOW_OFF is disabled files will be send in PM, instead of sending start.\n")
 LOG_STR += ("SINGLE_BUTTON is Found, filename and files size will be shown in a single button instead of two seperate buttons\n" if SINGLE_BUTTON else "SINGLE_BUTTON is disabled , filename and file_sixe will be shown as diffrent buttons\n")
 LOG_STR += (f"CUSTOM_FILE_CAPTION enabled with value {CUSTOM_FILE_CAPTION}, your files will be send along with this customized caption.\n" if CUSTOM_FILE_CAPTION else "No CUSTOM_FILE_CAPTION Found, Default captions of file will be used.\n")
