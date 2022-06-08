@@ -49,15 +49,18 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('🔔 Join Updates Channel', url="https://t.me/+KUl3bT3sybY0MTll")
-            ]]
+                InlineKeyboardButton('🔔 JOIN UPDATES CHANNEL', url="https://t.me/+KUl3bT3sybY0MTll")
+                ],[
+                InlinekeyboardButton(⚫ GET SUPPORT DARKLORD ⚫', url="https://t.me/hellodarklord")
+              ]]
+
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>👋 Hello {u.mention},</b> Welcome to <b>{message.chat.title}</b>\n\n<b>Gʟᴀᴅ ʏᴏᴜ ғᴏᴜɴᴅ ᴜs !! Pʟᴇᴀsᴇ ᴛᴀᴋᴇ ᴀ ᴍᴏᴍᴇɴᴛ ᴛᴏ ʀᴇᴀᴅ ᴛʜᴇ Gʀᴏᴜᴘ Rᴜʟᴇs. Iᴛ's sʜᴏʀᴛ I ᴘʀᴏᴍɪsᴇ.Yᴏᴜʀ ᴘᴏsᴛɪɴɢ ʜᴇʀᴇ ɪs ᴀᴄᴄᴇᴘᴛɪɴɢ ᴛʜᴀᴛ ʏᴏᴜ'ᴠᴇ ʀᴇᴀᴅ ᴛʜᴇᴍ ᴀɴᴅ ᴡɪʟʟ ᴀʙɪᴅᴇ ʙʏ ᴛʜᴇᴍ. Jᴜᴍᴘ ɪɴ !! </b>",
+                text=f"<b>👋 Hello {u.mention},</b>\n\nWelcome to <b{message.chat.title} 💐</b>\n\n<b>Gʟᴀᴅ ʏᴏᴜ ғᴏᴜɴᴅ ᴜs !! Pʟᴇᴀsᴇ ᴛᴀᴋᴇ ᴀ ᴍᴏᴍᴇɴᴛ ᴛᴏ ʀᴇᴀᴅ ᴛʜᴇ Gʀᴏᴜᴘ Rᴜʟᴇs. Iᴛ's sʜᴏʀᴛ I ᴘʀᴏᴍɪsᴇ.Yᴏᴜʀ ᴘᴏsᴛɪɴɢ ʜᴇʀᴇ ɪs ᴀᴄᴄᴇᴘᴛɪɴɢ ᴛʜᴀᴛ ʏᴏᴜ'ᴠᴇ ʀᴇᴀᴅ ᴛʜᴇᴍ ᴀɴᴅ ᴡɪʟʟ ᴀʙɪᴅᴇ ʙʏ ᴛʜᴇᴍ. Jᴜᴍᴘ ɪɴ !!</b>\n\n📆 Date: <b> {date} </b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
 
