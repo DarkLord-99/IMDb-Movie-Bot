@@ -50,9 +50,7 @@ async def save_group(bot, message):
             for u in message.new_chat_members:
                 buttons = [[
                 InlineKeyboardButton('🔔 JOIN UPDATES CHANNEL', url="https://t.me/+KUl3bT3sybY0MTll")
-                ],[
-                InlinekeyboardButton('⚫ GET SUPPORT DARKLORD ⚫', url="https://t.me/hellodarklord")
-                ]]
+              ]]
 
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
