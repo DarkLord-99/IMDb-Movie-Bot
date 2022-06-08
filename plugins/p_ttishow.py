@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('Updates 📢', url='https://t.me/josprojects/221')
+            InlineKeyboardButton('Updates 📢', url='https://t.me/+KUl3bT3sybY0MTll')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -49,7 +49,7 @@ async def save_group(bot, message):
         if settings["welcome"]:
             for u in message.new_chat_members:
                 buttons = [[
-                InlineKeyboardButton('👉 ⚠️ Press me... 🥰 👈', url="https://t.me/josprojects")
+                InlineKeyboardButton('🔔 Join Updates Channel', url="https://t.me/+KUl3bT3sybY0MTll")
             ]]
                 if (temp.MELCOW).get('welcome') is not None:
                     try:
@@ -57,7 +57,7 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>👋 Hi! {u.mention},</b> Welcome to <b>{message.chat.title}</b>\n\n<b>👇 Official Projects Channels 👇</b>",
+                text=f"<b>👋 Hello {u.mention},</b> Welcome to <b>{message.chat.title}</b>\n\n<b>Gʟᴀᴅ ʏᴏᴜ ғᴏᴜɴᴅ ᴜs !! Pʟᴇᴀsᴇ ᴛᴀᴋᴇ ᴀ ᴍᴏᴍᴇɴᴛ ᴛᴏ ʀᴇᴀᴅ ᴛʜᴇ Gʀᴏᴜᴘ Rᴜʟᴇs. Iᴛ's sʜᴏʀᴛ I ᴘʀᴏᴍɪsᴇ.Yᴏᴜʀ ᴘᴏsᴛɪɴɢ ʜᴇʀᴇ ɪs ᴀᴄᴄᴇᴘᴛɪɴɢ ᴛʜᴀᴛ ʏᴏᴜ'ᴠᴇ ʀᴇᴀᴅ ᴛʜᴇᴍ ᴀɴᴅ ᴡɪʟʟ ᴀʙɪᴅᴇ ʙʏ ᴛʜᴇᴍ. Jᴜᴍᴘ ɪɴ !! </b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
 
