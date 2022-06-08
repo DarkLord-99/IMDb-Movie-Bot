@@ -962,7 +962,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b> ↪️ Requested:</b> <a href={url}>{title}</a>\n👤 Requested By: {message.from_user.mention}\n<b>📑 Total Page:</b> <a href={url}>{page}</a>\n<b>📁 Total Files:</b> <a href={url}>{file}</a>\n📤Uploaded To: Movie Time Server\n<b>🧑‍🔧 Get Support ✔️</b> <a href="https://t.me/hellodarklord">DarkLord</a>\n\n📌 Press The Down Buttons To Access The File\n📌 This Post Will Be Deleted After 10 Minutes."
+        cap = f"<b>🎬 Title:</b> <a href={url}>{title}</a>\n<b>📺 Type:</b> {kind}\n<b>📆 Release:</b> <a href={url}/releaseinfo>{release_date}</a>\n<b>🌟 Rating:</b> <a href={url}/ratings>{rating} / 10</a>\n(based on <code>{votes}</code> user ratings.)\n\n<b>📀 Runtime:</b> <code>{runtime} minutes</code>\n<b>🎭 Genres:</b> {genres}\n\n<b>☀️ Languages:</b> {languages}\n<b>🎛 Countries:</b> {countries}\n<b>🎥 Director:</b> {director}\n<b>📝 Writers:</b> {writer}"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
