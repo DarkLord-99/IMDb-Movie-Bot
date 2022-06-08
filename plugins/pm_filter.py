@@ -962,7 +962,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/+q9NMdy0rY10zZWZl'>© IMDb (Series & Movies) Studio</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 hours to avoid copyright issues.</s>"
+        cap = f"↪️ Requested: <a href={url}>{title}</a>\n👤 Requested By: {message.from_user.mention}\n📑 Total Page: <a href={url}>{page}</a>\n📁 Total Files: <a href={url}>{file}</a>\n📤Uploaded To: Movie Time Server\n🧑‍🔧 Get Support ✔️ <a href="https://t.me/hellodarklord">DarkLord</a>\n\n📌 Press The Down Buttons To Access The File\n📌 This Post Will Be Deleted After 10 Minutes.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
